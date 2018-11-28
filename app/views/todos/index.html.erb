@@ -1,0 +1,12 @@
+<div class='row'>
+  <div class='col-md-6 offset-md-3'>
+    <ul class="card card-body bg-dark">
+      <% @todos.each do |t| %>
+        <li class='list-group-item'>
+          <p> <%= t.description %> </p>
+        </li>
+          <%= link_to 'New', todos_new_path, class: 'btn btn-success' %>
+      <% end %>
+    </ul>
+  </div>
+</div>
