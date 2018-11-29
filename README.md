@@ -1,4 +1,9 @@
 # README
+Paginas de ayuda
+https://getbootstrap.com/docs/4.1/components/buttons/
+https://www.justinweiss.com/articles/search-and-filter-rails-models-without-bloating-your-controller/
+https://stackoverflow.com/questions/25750860/couldnt-find-todo-with-id
+*************
 
 This README would normally document whatever steps are necessary to get the
 application up and running.

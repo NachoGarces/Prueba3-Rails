@@ -1,5 +1,11 @@
-<%= form_with model: @todo, local: true do |f| %>
-  <%= f.text_area :description %>
-  <%= f.check_box :completed %>
-  <%= f.submit class:'btn btn-success' %>
-<% end %>
+<div class='row'>
+  <div class='col-md-6 offset-md-3'>
+    <div class="card card-body bg-dark">
+      <%= form_with model: @todo, local: true do |f| %>
+        <%= f.text_area :description %>
+        <%= f.check_box :completed %>
+        <%= f.submit class:'btn btn-success' %>
+      <% end %>
+    </div>
+  </div>
+</div>
