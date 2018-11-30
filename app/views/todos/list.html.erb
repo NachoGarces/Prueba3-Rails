@@ -1,0 +1,26 @@
+<div class='row'>
+  <div class='col-md-4 offset-md-1 MT'>
+    <ul class='card card-body bg-dark'>
+    <h4 class='text-success'> Completados </h4>
+      <% @todos.each do |t| %>
+        <% if t.completed == true %>
+          <div class='list-group-item text-center'>
+            <p> <%= t.description %> </p>
+          </div>
+        <% end %>
+      <% end %>
+    </ul>
+  </div>
+  <div class='col-md-4 offset-md-2 MT'>
+    <ul class='card card-body bg-dark'>
+  <h4 class='text-danger'> NO Completados </h4>
+      <% @todos.each do |t| %>
+        <% if t.completed == false %>
+          <div class='list-group-item text-center'>
+            <p> <%= t.description %> </p>
+          </div>
+        <% end %>
+      <% end %>
+    </ul>
+  </div>
+</div>

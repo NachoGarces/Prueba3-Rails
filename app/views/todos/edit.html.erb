@@ -1,9 +1,8 @@
 <div class='row'>
-  <div class='col-md-6 offset-md-3'>
+  <div class='col-md-6 offset-md-3 MT'>
     <div class="card card-body bg-dark">
       <%= form_with model: @todo, local: true do |form| %>
         <%= form.text_area :description %>
-        <%= form.check_box :completed %>
         <%= form.submit class:"btn btn-primary"%>
       <% end %>
     </div>
